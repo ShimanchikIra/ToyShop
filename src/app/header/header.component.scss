@@ -5,7 +5,7 @@
   font-weight: bold;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to top left, #00FA9A, #3CB371);
+  background: linear-gradient(to top left, #2E8B57, #00FA9A);
   .wrap{
     justify-content: space-between;
     .logo-box{
@@ -25,6 +25,11 @@
         color: #fff;
         margin-right: 20px;
         text-transform: uppercase;
+        cursor: pointer;
+        &_active{
+          color: #000;
+
+        }
       }
     }
   }

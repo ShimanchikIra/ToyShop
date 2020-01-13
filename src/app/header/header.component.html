@@ -3,10 +3,10 @@
     <div class="logo-box">
       <p class="logo">TOY<span class="logo__shop">SHOP</span></p>
     </div>
-      <ul class="menu">
-        <li class="menu__item">Главная</li>
-        <li class="menu__item">Каталог</li>
-        <li class="menu__item">Корзина</li>
-      </ul>
+      <nav class="menu">
+        <a routerLink="" routerLinkActive="menu__item_active" [routerLinkActiveOptions]="{exact:true}" class="menu__item">Главная</a>
+        <a routerLink="/catalog" routerLinkActive="menu__item_active" class="menu__item">Каталог</a>
+        <a class="menu__item">Корзина</a>
+      </nav>
   </div>
 </header>

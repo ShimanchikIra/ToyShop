@@ -6,6 +6,8 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(to top left, #2E8B57, #00FA9A);
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 255, .2);
   .wrap{
     justify-content: space-between;
     .logo-box{

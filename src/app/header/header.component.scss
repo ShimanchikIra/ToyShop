@@ -1,0 +1,31 @@
+.header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top left, #00FA9A, #3CB371);
+  .wrap{
+    justify-content: space-between;
+    .logo-box{
+      color: #ffffff;
+      .logo{
+        font-size: 24px;
+        color: Blue;
+        &__shop{
+          color: #ffffff;
+
+        }
+      }
+    }
+    .menu{
+      display: flex;
+      &__item{
+        color: #fff;
+        margin-right: 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

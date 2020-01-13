@@ -1,0 +1,12 @@
+.footer{
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top left, #00FA9A, #3CB371);
+  .wrap{
+    justify-content: center;
+  }
+    &__copyright{
+      color: #fff;
+    }
+
+}

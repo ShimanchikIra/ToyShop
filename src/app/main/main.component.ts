@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Config} from '../../config';
+import {ConfigService} from '../config.service';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  config: Config;
+  status: number;
+  // headers: string[];
+
+  constructor(private configService: ConfigService) { }
 
   ngOnInit() {
-  }
+    this.configService.getConfig().subscribe(resp => {
+      // display its headers
+      // const keys = resp.headers.keys();
+      // this.headers = keys.map(key =>
+      //   `${key}: ${resp.headers.get(key)}`);
+      this.config = { ... resp.body };
+      this.status = resp.status;
+    });
 
+  }
 }

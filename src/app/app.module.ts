@@ -8,6 +8,10 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { AboutShopComponent } from './main/about-shop/about-shop.component';
 import { CatalogComponent } from './main/catalog/catalog.component';
+import {MatCardModule} from '@angular/material';
+import {ConfigService} from './config.service';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: '', component: AboutShopComponent},
@@ -27,9 +31,10 @@ const appRoutes: Routes = [
     // BrowserModule,
     // RouterModule,
     // BrowserAnimationsModule
-    BrowserModule, RouterModule.forRoot(appRoutes)
+    FormsModule, HttpClientModule,
+    BrowserModule, RouterModule.forRoot(appRoutes), MatCardModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [ConfigService]
 })
 export class AppModule { }

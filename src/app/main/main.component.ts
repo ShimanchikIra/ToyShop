@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {Config} from '../../config';
 import {ConfigService} from '../config.service';
+import {LogService} from '../log.service';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  styleUrls: ['./main.component.scss'],
+  providers: [LogService]
 })
 export class MainComponent implements OnInit {
 
@@ -24,6 +26,6 @@ export class MainComponent implements OnInit {
       this.config = { ... resp.body };
       this.status = resp.status;
     });
-
+    LogService.write('Get response');
   }
 }

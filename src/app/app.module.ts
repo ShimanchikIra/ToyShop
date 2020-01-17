@@ -8,10 +8,12 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { AboutShopComponent } from './main/about-shop/about-shop.component';
 import { CatalogComponent } from './main/catalog/catalog.component';
-import {MatCardModule} from '@angular/material';
 import {ConfigService} from './config.service';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import {LogService} from './log.service';
+import { ProductCardComponent } from './main/catalog/product-card/product-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   { path: '', component: AboutShopComponent},
@@ -25,16 +27,17 @@ const appRoutes: Routes = [
     FooterComponent,
     MainComponent,
     AboutShopComponent,
-    CatalogComponent
+    CatalogComponent,
+    ProductCardComponent
   ],
   imports: [
     // BrowserModule,
     // RouterModule,
     // BrowserAnimationsModule
     FormsModule, HttpClientModule,
-    BrowserModule, RouterModule.forRoot(appRoutes), MatCardModule
+    BrowserModule, RouterModule.forRoot(appRoutes), BrowserAnimationsModule
   ],
   bootstrap: [AppComponent],
-  providers: [ConfigService]
+  providers: [ConfigService, LogService]
 })
 export class AppModule { }

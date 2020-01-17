@@ -1,11 +1,8 @@
 <p>catalog works!</p>
+<p>{{status}}</p>
+<p>{{products.length}}</p>
+<div class="products">
+  <app-product-card *ngFor="let product of products"
+                    [product]="product"></app-product-card>
 
-
-<!--<ul>-->
-<!--  <li *ngFor="let product of products">-->
-<!--    <p>Имя пользователя: {{product.id}}</p>-->
-<!--    <p>Имя пользователя: {{product.name}}</p>-->
-<!--    <p>Имя пользователя: {{product.price}}</p>-->
-
-<!--  </li>-->
-<!--</ul>-->
+</div>

@@ -1,0 +1,22 @@
+.product-card{
+  border: 2px solid #eee;
+  box-sizing: border-box;
+  border-radius: 5%;
+  text-align: center;
+  &__img-box{
+   // margin: 0 auto;
+  }
+  &__img{
+    max-width: 100%;
+    height: auto;
+  }
+  &__name{
+    color: blue;
+  }
+  &__price{
+
+  }
+  &__available{
+
+  }
+}

@@ -1,0 +1,12 @@
+<div class="product-card">
+  <div class="product-card__img-box">
+    <img src="{{product.imgUrl}}" alt="k" class="product-card__img">
+  </div>
+  <p class="product-card__name">{{product.name}}</p>
+  <p class="product-card__price">{{product.price}}</p>
+  <p class="product-card__amount">{{product.amount}}</p>
+  <label>
+    <input type="checkbox" [attr.checked]="product.available" class="product-card__available" disabled>
+  </label>
+  <button class="product-card__buy" [attr.disabled]="product.available">В корзину</button>
+</div>

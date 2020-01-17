@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class LogService {
 
   constructor() { }
-  static write(logMessage: string): void {
-    console.log(logMessage);
+  static write(logMessage: string, status?: number): void {
+    console.log(logMessage + status);
   }
 }

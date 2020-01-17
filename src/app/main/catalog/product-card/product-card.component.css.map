@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAa;EACX,MAAM,EAAE,cAAc;EACtB,UAAU,EAAE,UAAU;EACtB,aAAa,EAAE,EAAE;EACjB,UAAU,EAAE,MAAM;EAIlB,kBAAM;IACJ,SAAS,EAAE,IAAI;IACf,MAAM,EAAE,IAAI;EAEd,mBAAO;IACL,KAAK,EAAE,IAAI",
+"sources": ["product-card.component.scss"],
+"names": [],
+"file": "product-card.component.css"
+}

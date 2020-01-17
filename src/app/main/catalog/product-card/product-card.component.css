@@ -1,0 +1,12 @@
+.product-card {
+  border: 2px solid #eee;
+  box-sizing: border-box;
+  border-radius: 5%;
+  text-align: center; }
+  .product-card__img {
+    max-width: 100%;
+    height: auto; }
+  .product-card__name {
+    color: blue; }
+
+/*# sourceMappingURL=product-card.component.css.map */
